@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Landing Page/styles.css" />
+    <title>Neon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Hero and nav bar -->
+    <section id="hero" class="px-10 lg:px-40 lg:py-5 min-h-screen">
+      <!-- Nav bar div -->
+      <div class="flex justify-between min-w-full justify-center items-center">
+        <div class=" ">
+          <h1 class="text-2xl font-bold text-[#FF9D2B]">neon</h1>
+        </div>
+        <!-- Desktop menu -->
+        <div
+          class="w-[60%] flex justify-evenly text-xl font-semibold hidden lg:flex mt-[20px]"
+        >
+          <div class="group">
+            <a
+              class="hover:text-[#FF9D2B] duration-500 transition group"
+              href=""
+              >Home</a
+            >
+            <div
+              class="mx-auto opacity-0 w-1 h-1 bg-[#FF9D2B] rounded-full group-hover:opacity-100 group-hover:animate-ping mt-[10px]"
+            ></div>
+          </div>
+
+          <div class="group">
+            <a
+              class="hover:text-[#FF9D2B] duration-500 transition group"
+              href=""
+              >About</a
+            >
+            <div
+              class="mx-auto opacity-0 w-1 h-1 bg-[#FF9D2B] rounded-full group-hover:opacity-100 group-hover:animate-ping mt-[10px]"
+            ></div>
+          </div>
+          <div class="group">
+            <a
+              class="hover:text-[#FF9D2B] duration-500 transition group"
+              href=""
+              >Privacy Policy
+            </a>
+            <div
+              class="mx-auto opacity-0 w-1 h-1 bg-[#FF9D2B] rounded-full group-hover:opacity-100 group-hover:animate-ping mt-[10px] transition duration-500"
+            ></div>
+          </div>
+        </div>
+        <div class="mobile-flex flex justify-between items-center space-x-5">
+          <div>
+            <a
+              href="/Landing Page/registration/signin.html "
+              target="_blank"
+              class="bg-opacity-60 border border-[#FF9D2B] rounded-full px-5 py-[5px] pt-[1px] border-3 text-[#FF9D2B]"
+              >Sign In</a
+            >
+          </div>
+          <!-- Hamburger menu -->
+          <div class="relative">
+            <div id="menu-mobile" class="close lg:hidden">
+              <div class="group mt-20">
+                <a
+                  class="hover:text-[#ff9d2b] text-white font-semibold duration-500 transition group"
+                  href=""
+                  >Home</a
+                >
+                <div
+                  class="mx-auto opacity-0 w-1 h-1 bg-[#FF9D2B] rounded-full group-hover:opacity-100 group-hover:animate-ping mt-[10px]"
+                ></div>
+              </div>
+
+              <div class="group">
+                <a
+                  class="hover:text-[#FF9D2B] text-white duration-500 transition group"
+                  href=""
+                  >About</a
+                >
+                <div
+                  class="mx-auto opacity-0 w-1 h-1 bg-[#FF9D2B] rounded-full group-hover:opacity-100 group-hover:animate-ping mt-[10px]"
+                ></div>
+              </div>
+              <div class="group">
+                <a
+                  class="hover:text-[#FF9D2B] text-white duration-500 transition group"
+                  href=""
+                  >Privacy Policy
+                </a>
+                <div
+                  class="mx-auto opacity-0 w-1 h-1 bg-[#FF9D2B] rounded-full group-hover:opacity-100 group-hover:animate-ping mt-[10px] transition duration-500"
+                ></div>
+              </div>
+            </div>
+            <div
+              class="menu lg:hidden z-index-[100]"
+              onclick="openNew();"
+              id="menu"
+            >
+              <div>
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Hero Title -->
+      <div
+        class="flex flex-col lg:flex-row items-center justify-center lg:justify-center mx-[auto] mt-[60px] flex-start min-w-full md:flex-row-reverse"
+      >
+        <div class="flex w-full md:w-[40vw] gap[-60px] justify-evenly">
+          <img
+            src="/Landing Page/media_icons/iPhone 14 Pro Mockup Space Black (1).png"
+            class="inline-block w-[60%]"
+            alt=""
+          />
+          <img
+            src="/Landing Page/media_icons/iPhone 14 Pro Mockup Space Black.png"
+            class="inline-block w-[60%]"
+            alt=""
+          />
+        </div>
+        <div class="flex mt-[90px] flex-col items-start md:w-[55vw] px-10">
+          <h1
+            class="text-3xl lg:text-4xl font-bold leading-relaxed tracking-wider text-center md:text-left w-full md:w-[50%] mb-[40px]"
+          >
+            The most
+            <span
+              class="underline decoration-[#FF9D2B] animate-bounce decoration-double"
+              >secure</span
+            >
+            <br />
+            cryptocurrency wallet
+          </h1>
+          <p
+            class="text-xl leading-10 font-semibold text-center md:text-left w-full md:w-[60%]"
+          >
+            With neon safely store your crypto,<br />
+            collect NFTs, stake your tokens and <br />
+            so much more.
+          </p>
+          <div
+            class="flex h-10 justify-between gap-x-5 items-center mt-10 mx-auto md:mx-0 items-center"
+          >
+            <button
+              class="px-5 min-w-[20vh] whitespace-nowrap text-sm lg:text-lg py-3 bg-[#FF9D2B] rounded-full text-white border border-[#FF9D2B]"
+            >
+              Download App
+            </button>
+            <a href="/Landing Page/registration/signup.html" target="_blank">
+              <button
+                class="px-5 w-[20vh] border-2 text-sm lg:text-lg py-3 bg-opacity-100 rounded-full text-[#FF9D2B] border border-[#FF9D2B]"
+              >
+                Sign Up
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- Img Div -->
+        <!-- <div class="flex w-[40%] gap[-60px]">
+          <img
+            src="./media_icons/iPhone 14 Pro Mockup Space Black (1).png"
+            class="inline-block w-60"
+            alt=""
+          />
+          <img
+            src="./media_icons/iPhone 14 Pro Mockup Space Black.png"
+            class="inline-block w-60"
+            alt=""
+          />
+        </div> -->
+      </div>
+    </section>
+    <!-- Mid section -->
+    <section
+      class="px-5 md:px-40 py-5 min-h[150vh] lg:min-h-[180vh] pt-10"
+      id="mid"
+    >
+      <div class="text-center mx-auto text-4xl font-bold">
+        The Crypto Wallet For All
+      </div>
+      <div
+        class="flex text-center items-center mx-auto justify-between text-[10px] md:text-2xl font-bold mt-10 w-full"
+      >
+        <p class="text-[#ff9d2b]">11m+ <br />Users</p>
+        <p class="text-[#ff9d2b]">100+ <br />Supported Countries</p>
+        <p class="text-[#ff9d2b]">$200B+ <br />Quarterly trading volume</p>
+      </div>
+
+      <!-- Content -->
+      <div
+        class="div flex mt-[90px] flex-col lg:flex-row items-center w-full justify-between"
+      >
+        <img src="/Landing Page/media_icons/Desktop - 4.png" class="" alt="" />
+        <div class="w-full lg:w-[45%]">
+          <h1
+            class="text-2xl lg:text-5xl font-bold leading-relaxed text-center lg:whitespace-normal mx-auto text-left lg:text-left mt-10"
+          >
+            Build and manage your crypto portfolio
+          </h1>
+          <div class="flex flex-col mt-10 w-full items-start">
+            <!-- Normal buttons with vector images  -->
+            <div class="flex w-[88%] justify-between items-center space-x-10">
+              <div
+                class="shadow-2xl shadow-black bg-[#f2f2f2] rounded-full w-[34%] h-[60px] md:w-[70px] md:h-[70px] flex items-center justify-center"
+              >
+                <img
+                  src="/Landing Page/media_icons/Vector.png"
+                  class=" "
+                  alt=""
+                />
+              </div>
+
+              <div>
+                <h1 class="text-xl font-bold">
+                  The latest in blockchain security
+                </h1>
+                <p class="mt-2">
+                  Neon offers you the industry standard in security to <br />
+                  make sure your assets are always secure.
+                </p>
+              </div>
+            </div>
+            <!-- Normal buttons with vector images  -->
+            <div
+              class="flex w-[82%] justify-between items-center mt-10 mb-10 space-x-10"
+            >
+              <div
+                class="shadow-2xl shadow-black bg-[#f2f2f2] rounded-full w-[34%] h-[60px] md:w-[70px] md:h-[70px] flex items-center justify-center"
+              >
+                <img
+                  src="/Landing Page/media_icons/Vector (1).png"
+                  class=" "
+                  alt=""
+                />
+              </div>
+
+              <div>
+                <h1 class="text-xl font-bold">24/7 customer support</h1>
+                <p class="mt-2">
+                  Got any issues? Support is always there to help
+                </p>
+              </div>
+            </div>
+            <!-- Normal buttons with vector images  -->
+            <div
+              class="flex w-[75%] md:w-[65%] justify-between items-center space-x-10"
+            >
+              <div
+                class="shadow-2xl shadow-black bg-[#f2f2f2] rounded-full w-[30%] h-[60px] flex items-center justify-center md:w-[70px] md:h-[70px]"
+              >
+                <img
+                  src="/Landing Page/media_icons/Vector (2).png"
+                  class=""
+                  alt=""
+                />
+              </div>
+
+              <div>
+                <h1 class="text-xl font-bold">Mobile device support</h1>
+                <p class="mt-2 leading-5">
+                  Neon’s mobile version offers you <br />
+                  ease of access to your assets even <br />
+                  on the go!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 3rd section before footer -->
+    <section
+      class="px-10 md:px-40 py-5 min-h-[100vh] lg:min-h-[140vh] pt-10"
+      id="third"
+    >
+      <!-- Linear gradient box -->
+      <div
+        id="linear"
+        class="mx-auto w-full flex flex-col gap-x-5 py-5 px-10 text-center items-center justify-center rounded-lg md:rounded-none"
+      >
+        <h1 class="md:text-3xl text-xl font-bold text-white px-10">
+          As Seen On
+        </h1>
+        <div class="flex w-full items-center justify-center">
+          <div>
+            <img
+              src="/Landing Page/media_icons/forbes-seeklogo.com 1.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="/Landing Page/media_icons/The_New_York_Times-Logo.wine 1.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="/Landing Page/media_icons/TechCrunch-Logo.wine 1.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="/Landing Page/media_icons/The_Wall_Street_Journal-Logo.wine 1.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <h1 class="text-center mx-auto mt-20 text-4xl font-bold">
+        Get Started In A Few Minutes
+      </h1>
+      <div class="flex items-center w-full justify-evenly mt-40">
+        <img
+          src="/Landing Page/media_icons/Vector (3).png"
+          class="w-[50px]"
+          alt=""
+        />
+        <div class="border-t-[3px] w-40 border-[#434343]"></div>
+        <img
+          src="/Landing Page/media_icons/Vector (4).png"
+          class="w-[50px]"
+          alt=""
+        />
+        <div class="border-t-[3px] w-40 border-[#434343]"></div>
+
+        <img
+          src="/Landing Page/media_icons/credit-card.png"
+          class="w-[50px]"
+          alt=""
+        />
+      </div>
+      <div class="flex items-center w-[92%] justify-between mt-5">
+        <p class="text-md md:text-2xl font-bold text-[#ff9d2b]">
+          Create an account
+        </p>
+        <p class="text-md md:text-2xl font-bold text-[#ff9d2b]">Get Verified</p>
+        <p class="text-md md:text-2xl font-bold text-[#ff9d2b]">Buy assets</p>
+      </div>
+
+      <a
+        href="/Landing Page/registration/signup.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><div
+          class="mx-auto text-center px-10 py-1 md:py-5 w-60 mt-20 cursor-pointer rounded-full text-white text-lg"
+          id="linear-buttons"
+        >
+          Sign up today!
+        </div></a
+      >
+    </section>
+    <!-- footer -->
+    <footer
+      class="flex justify-between space-x-5 w-full text-white bg-[#FF9D2B] bg-opacity-70 lg:h-[70vh] px-5 lg:px-40 lg:py-10 py-5"
+      id="footer"
+    >
+      <div
+        class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-10"
+      >
+        <div class="flex flex-col">
+          <h1 class="text-xl md:text-3xl font-bold text-white">neon</h1>
+          <select
+            class="w-[85px] mt-10 border border-white outline-white bg-[#FF9D2B] px-[3px] bg-opacity-0 text-center text-white rounded-full checked:text-black"
+            name="language"
+            id=""
+          >
+            <option value="language">English</option>
+            <option value="language">French</option>
+            <option value="language">Dutch</option>
+            <option value="language">Spanish</option>
+          </select>
+          <p class="text-white mt-5 text-sm md:text-lg">
+            &#169; 2022 Neon &#8482;
+          </p>
+          <div class="flex items-center mt-5">
+            <img
+              src="/Landing Page/media_icons/Vector (5).png"
+              alt=""
+              class="w-[24px]"
+            />
+            <img
+              src="/Landing Page/media_icons/Instagram-Logo.wine 1.png"
+              class="w-[35px]"
+              alt=""
+            />
+            <img
+              src="/Landing Page/media_icons/Vector (6).png"
+              class="w-[15px]"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col">
+          <h1 class="font-bold text-white md:text-3xl text-lg">Individuals</h1>
+          <ul class="decoration-style-none semibold space-y-5 text-xs">
+            <li class="text-white mt-5">Buy & Sell</li>
+            <li class="text-white">Earn free crypto</li>
+            <li class="text-white">Wallet</li>
+            <li class="text-white">NFT</li>
+            <li class="text-white">Card</li>
+            <li class="text-white">Derivatives</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex flex-col">
+        <h1 class="font-bold text-white md:text-3xl text-lg">Company</h1>
+        <ul class="decoration-style-none semibold space-y-5 text-xs">
+          <li class="text-white mt-5">About</li>
+          <li class="text-white">Careers</li>
+          <li class="text-white">Affiliates</li>
+          <li class="text-white">Blog</li>
+          <li class="text-white">Press</li>
+          <li class="text-white">Investors</li>
+          <li class="text-white">Vendors</li>
+          <li class="text-white">Legal & Privacy</li>
+          <li class="text-white">Cookie Policy</li>
+          <li class="text-white">Cookie Preferences</li>
+          <li class="text-white">Digital Asset Disclosures</li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col">
+        <h1 class="font-bold text-white lg:text-3xl text-lg">Support</h1>
+        <ul class="decoration-style-none semibold space-y-5 text-xs">
+          <li class="text-white mt-5">Help Center</li>
+          <li class="text-white">Contact Us</li>
+          <li class="text-white">Create account</li>
+          <li class="text-white">ID verification</li>
+          <li class="text-white">Account information</li>
+          <li class="text-white">Payment Methods</li>
+          <li class="text-white">Account access</li>
+          <li class="text-white">Supported crypto</li>
+          <li class="text-white">Supported countries</li>
+          <li class="text-white">Status</li>
+        </ul>
+      </div>
+    </footer>
+    <script src="/Landing Page/index.js"></script>
+  </body>
+</html>
