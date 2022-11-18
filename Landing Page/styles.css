@@ -138,8 +138,8 @@
 }
 @media only screen and (max-width: 724px) {
   .border1 {
-    border-left: 2px solid white;
+    /* border-left: 2px solid white;
     padding-left: 10px;
-    padding-right: 0px;
+    padding-right: 0px; */
   }
 }
