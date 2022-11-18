@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Form container -->
+    <div class="min-h-[130vh] min-w-full bg-[#f2f2f2] pt-1">
+      <!-- Form card -->
+      <div class="mx-auto pt-10 flex flex-col items-center justify-center">
+        <h1 class="text-2xl font-bold text-[#FF9D2B] text-center mb-10">
+          neon
+        </h1>
+        <h1 class="text-xl font-bold text-[#ff9d2b] text-center">
+          Create Your Neon Account
+        </h1>
+        <form
+          action=""
+          class="mx-[auto ] text-center items-center mt-5 w-[80vw] lg:w-[auto] flex flex-col items-center justify-center"
+        >
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            id=""
+            class="block w-[70vw] lg:w-[30vw] bg-[#E9E9E9] p-5 rounded-3xl"
+          />
+          <input
+            type="text"
+            name="name"
+            placeholder="Username"
+            id=""
+            class="block w-[70vw] lg:w-[30vw] bg-[#E9E9E9] p-5 rounded-3xl mt-5"
+          />
+          <input
+            type="password"
+            name="name"
+            placeholder="Password"
+            id=""
+            class="block w-[70vw] lg:w-[30vw] bg-[#E9E9E9] p-5 rounded-3xl mt-5"
+          />
+          <input
+            type="password"
+            name="name"
+            placeholder="Confirm Password"
+            id=""
+            class="block w-[70vw] lg:w-[30vw] bg-[#E9E9E9] p-5 rounded-3xl mt-5"
+          />
+          <div class="flex items-center flex-start tracking-wide">
+            <label for="check" class="mt-5 text-xs text-center">
+              <input
+                type="checkbox"
+                name="Check"
+                id=""
+                class="rounded-xl bg-[#E9E9E9] mt-5 accent-[#FF9D2B] text-white h-[18px] w-[18px] mr-[10px]"
+              />I agree to the
+              <span class="underline cursor-pointer">User Agreement</span> and I
+              have read the
+              <span class="underline cursor-pointer">Privacy Policy</span>
+            </label>
+          </div>
+          <div class="w-[40vw]">
+            <a
+              href="#"
+              class="bg-[#FF9D2B] p-5 px-10 min-w-full rounded-full text-white text-md lg:text-2xl mt-10"
+              ><input type="submit" value="Sign Up" class="w-[16vw] mt-[50px]"
+            /></a>
+          </div>
+
+          <h1 class="text-xl lg:text-3xl mt-20 text-[#333333]">
+            Create Account Using
+          </h1>
+          <!-- Button container -->
+          <div class="flex justify-between mt-10 space-x-5">
+            <div
+              class="flex bg-[#E9E9E9] rounded-3xl min-w-[30vw] lg:min-w-[13vw] p-5 justify-evenly gap-x-[8px] lg:justify-evenly items-center cursor-pointer"
+            >
+              <img
+                src="./media_icons/Google Logos By hrhasnai (1).png"
+                alt=""
+                class="h-5 lg:h-10"
+              />
+              <a
+                href="https://accounts.google.com/"
+                class="text-xl lg:text-3xl text-[#333333]"
+                >Google</a
+              >
+            </div>
+            <div
+              class="flex bg-[#E9E9E9] rounded-3xl min-w-[30vw] lg:min-w-[13vw] p-5 justify-evenly gap-x-[8px] lg:justify-evenly items-center cursor-pointer"
+            >
+              <img
+                src="./media_icons/Vector (7).png"
+                alt=""
+                class="h-5 lg:h-10"
+              />
+              <a
+                href="https://www.icloud.com/"
+                class="text-xl lg:text-3xl text-[#333333]"
+                >Apple</a
+              >
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
